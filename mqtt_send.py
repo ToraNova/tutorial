@@ -9,7 +9,7 @@ def on_connect(client, userdata, flags, rc):
 
 client = mqtt.Client()
 client.on_connect = on_connect
-client.connect("127.0.0.1", 1883, 60)
+client.connect("0.0.0.0", 1883, 60)
 client.loop_start()
 
 time.sleep(1) #wait for connection
